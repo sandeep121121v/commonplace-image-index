@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f1e8">
+    <meta name="description" content="Commonplace is a considered image search, ready for whatever catches your eye.">
+    <title>Commonplace — image index</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Commonplace home">
+        <span class="wordmark-mark" aria-hidden="true">c.</span>
+        <span>commonplace</span>
+      </a>
+      <p class="header-note">A small index of the visual world</p>
+      <a class="header-link" href="#collection">YOUR COLLECTION <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> IMAGE INDEX / NO. 001</p>
+          <h1 id="intro-title">Follow a<br><em>curiosity.</em></h1>
+          <p class="intro-description">A field guide to the images you’re looking for — and the ones you didn’t know you were.</p>
+        </div>
+
+        <div class="search-panel">
+          <p class="panel-label">START WITH A SUBJECT</p>
+          <label class="sr-only" for="search-input">Search for images</label>
+          <div class="search-row">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="search-input" name="q" type="search" placeholder="Try ‘quiet mornings’" autocomplete="off">
+            <button id="search-button" class="search-button" type="button">Search <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="suggestion-row" aria-label="Suggested searches">
+            <span class="suggestion-label">A FEW PLACES TO BEGIN</span>
+            <button class="chip" type="button">Botanical</button>
+            <button class="chip" type="button">Architecture</button>
+            <button class="chip" type="button">Still life</button>
+          </div>
+          <button id="clear-search" class="clear-button" type="button">Clear search <span aria-hidden="true">×</span></button>
+        </div>
+
+        <div class="orbit-stamp" aria-hidden="true">
+          <span class="stamp-ring stamp-ring-outer"></span>
+          <span class="stamp-ring stamp-ring-inner"></span>
+          <span class="stamp-sun"></span>
+          <span class="stamp-caption">LOOK<br>CLOSER</span>
+          <span class="stamp-number">01 — 26</span>
+        </div>
+      </section>
+
+      <section class="collection" id="collection" aria-labelledby="collection-title">
+        <div class="collection-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> THE OPEN SHELF</p>
+            <h2 id="collection-title">Your findings</h2>
+          </div>
+          <p class="result-count"><span class="count-dot"></span><span id="result-count">0</span> ITEMS</p>
+        </div>
+        <div id="results" class="results-grid" aria-live="polite" aria-label="Image search results"></div>
+        <div class="empty-state" id="empty-state">
+          <div class="empty-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="empty-title">A blank page, for now.</p>
+          <p class="empty-copy">Search for something on your mind.<br>Your collection will take shape here.</p>
+          <span class="empty-footnote">WAITING FOR A FIRST FINDING&nbsp; ↗</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>COMMONPLACE / IMAGE INDEX</span>
+      <span>MADE FOR THE CURIOUS <span class="footer-spark">✳</span></span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
